@@ -15,5 +15,15 @@ profile["Healer"]["soundFile"] = "Blizzard prayerofmending_impact_head"
 add_notify(profile["Healer"])
 profile["ldbText"] = "Icons"
 profile["ldbLabel"] = "Short"
+profile["queues"] = profile["queues"] or {}
+profile["queues"][744] = true -- Timewalking: TBC
+-- DF queues >START
+profile["queues"][2350] = true
+profile["queues"][2351] = true
+profile["queues"][1670] = false
+profile["queues"][2274] = true
+-- DF queues <END
+profile["queues"]["auto"] = false
+-- TODO: make new setting "all" => "each and every entry available in LFD dropdown"
 
 LibStub("AceConfigRegistry-3.0"):NotifyChange(target_addon_name)
