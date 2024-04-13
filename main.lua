@@ -84,6 +84,12 @@ _G[a_name].EditCurrentLayout = function()
    LibEditModeOverride:ReanchorFrame(MicroMenuContainer, "BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", 0, 0)
 
    LibEditModeOverride:SetFrameSetting(MinimapCluster, Enum.EditModeMinimapSetting.Size, 3)
+   LibEditModeOverride:ReanchorFrame(MinimapCluster, "TOPRIGHT", UIParent, "TOPRIGHT", 0, 0)
+
+   LibEditModeOverride:ReanchorFrame(BuffFrame,   "TOPRIGHT", MinimapCluster, "TOPLEFT", 0, 0)
+   LibEditModeOverride:ReanchorFrame(DebuffFrame, "TOPRIGHT", BuffFrame, "BOTTOMRIGHT", 0, -20)
+   LibEditModeOverride:SetFrameSetting(BuffFrame,   Enum.EditModeAuraFrameSetting.IconSize, 3) -- 3 => 80%. At 10% per +-.
+   LibEditModeOverride:SetFrameSetting(DebuffFrame, Enum.EditModeAuraFrameSetting.IconSize, 3)
 
    MinimapBackdrop:SetAlpha(0.2)
    -- /run OverrideActionBar:SetAlpha(0.2)
