@@ -151,6 +151,12 @@ _G[a_name].EditCurrentLayout = function()
 
    LibEditModeOverride:ApplyChanges()
 
+   MerchantSellAllJunkButton:SetScript("OnShow", function(self)
+      self:SetParent(nil)
+      self:ClearAllPoints()
+      self:Hide()
+   end)
+
    if Class_ChangeEquipment then TutorialManager:ShutdownTutorial(Class_ChangeEquipment.name) end -- This one is really annoying
 
    ----- Addons -----
