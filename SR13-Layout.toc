@@ -4,9 +4,13 @@
 ## Author:
 ## OptionalDeps: LibStub, LibEditModeOverride-1.0, Details, Simulationcraft, CtA_Hawk, RareScanner, TalentTreeTweaks
 
+OnNextUpdateOnce.lua
 HookFreezeSetPoint.lua
+
 main.lua
 loader.lua
+
+Blizzard_AchievementUI.lua
 
 CtA_Hawk.lua
 Simulationcraft.lua
