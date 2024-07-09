@@ -7,10 +7,8 @@ local function ReanchorAchievementFrame()
    AchievementFrame:SetPoint("TOPLEFT", UIParent, "TOPLEFT", 0, -header_height + 83)
 end
 
-local start = a_env.OnNextUpdateOnce(ReanchorAchievementFrame)
-
-if AchievementFrame then
-   start()
-else
-   EventUtil.ContinueOnAddOnLoaded("Blizzard_AchievementUI", start)
-end
+a_env.OnAddOnLoadedAndNextUpdateOnce({
+   already_loaded = function() return AchievementFrame end,
+   addon = "Blizzard_AchievementUI",
+   ['then'] = ReanchorAchievementFrame,
+})
