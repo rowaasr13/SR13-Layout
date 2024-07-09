@@ -11,6 +11,7 @@ main.lua
 loader.lua
 
 Blizzard_AchievementUI.lua
+Blizzard_CombatText.lua
 
 CtA_Hawk.lua
 Simulationcraft.lua
