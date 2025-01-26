@@ -178,6 +178,8 @@ _G[a_name].EditCurrentLayout = function()
       CappingFrame:SetAlpha(0.4)
    end
 
+   MirrorTimerContainer:Show()
+
    if not first_success then
       print(a_name .." layout updated.")
       first_success = true
