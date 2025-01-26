@@ -150,6 +150,14 @@ _G[a_name].EditCurrentLayout = function()
    ObjectiveTrackerFrame:SetScale(0.8)
 
    LibEditModeOverride:ApplyChanges()
+   PetBattleFrame:SetScale(0.70)
+
+   ChatFrame1:SetScale(0.95)
+
+   OverrideActionBar:SetScale(0.70)
+
+   ProfessionsFrame:SetScale(0.90)
+
 
    MerchantSellAllJunkButton:SetScript("OnShow", function(self)
       self:SetParent(nil)
