@@ -206,5 +206,6 @@ function a_env.SetupAll()
    _G[a_name].SetCVars()
    _G[a_name].SetSettings()
    _G[a_name].SetBindings()
+   a_env.SetMinimapTrackingFilter()
    _G[a_name].EditCurrentLayout()
 end
